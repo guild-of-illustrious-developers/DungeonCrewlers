@@ -14,4 +14,39 @@
 == Objectifs
 
 ----
+- dungeon crawler like en coopération
+  - lobby pour former un groupe (~4), choisir un scénario de donjon et choisir sa
+    classe
+  - carte de déplacement du groupe de salle en salle
+    - le chef de groupe peut déplacer le groupe (c'est le premier à jouer en
+      phase de salle), le rôle de chef tourne entre chaque salle et le chef peut passer
+son tour
+    - les salles sont connectées ou non, accessibles ou non avec un objet
+      spécifique (ex: clé)
+    - tous les états sont permanents au donjon (mort, dégats, debuffs)
+    - si tout le groupe meurt, les objets récupérés sont perdus et le donjon
+      est terminé (sans évaluation via le ladder)
+    - le donjon est terminé une fois le combat avec le boss gagné
+  - système tour par tour dans les salles
+    - mode combat suivis de loot (pouvant être très rares), suivis du mode
+      exploration
+    - mode exploration (intéraction avec les objets, utiliser compétences ou objets, changer son
+      équipement, shops, etc), terminé lorsque tous les joueurs passent leur tour
+  - inventaire persistant entre les donjons (total = global + loot du donjon
+    courant)
+  - 6 compétences de classe (passifs, buffs, actions) dont un ultime
+    et un purement passif
+    - l'ultime est utilisable quand une barre de limite est pleine, remplie
+      via une condition spécifique à la classe
+  - objets passifs, objets utilisables (consommable ou avec cooldown)
+  - caractéristiques de personnages (modifiées par classe, objets, buffs)
+  - pas de système de niveau, tout repose sur le loot
+  - ladder (évaluation pour un donjon précis et évaluation globale),
+    donjon rejouables
+  - système de communication, chat de groupe
+  - voir les actions des membres du groupe (curseur, etc), voir les stats
+  - possibilité de faire un peu d'histoire  (PNJ, dialogues, etc)
+  - système d'échange
+  - potentiel éditeur communautaire de scénario, dont les éléments ont un coût total
+    limité par une valeur donnée (niveau)
 ----
