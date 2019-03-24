@@ -8,8 +8,17 @@
 * jeu web
 
 .Langages
-* Lua (server) 
+* Lua 5.1 (server)
 * JavaScript (client)
+
+.Dépendances
+* navigateur
+* LuaJIT
+* WebSocket (lua-websocket)
+* MessagePack
+** lua-messagepack
+** https://github.com/kawanet/msgpack-lite
+* libev (lua-ev)
 
 == Objectifs
 
