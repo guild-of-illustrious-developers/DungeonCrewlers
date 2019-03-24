@@ -24,6 +24,12 @@ end
 
 function Server:close()
   self.tick_task:remove()
+
+  -- close clients
+  for client in pairs(self.clients) do
+    client:close()
+  end
+
   print("Server exited.")
 end
 

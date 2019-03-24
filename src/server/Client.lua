@@ -19,6 +19,7 @@ end
 
 function Client:close()
   self.ws:close()
+  self:_onClose() -- make sure the close event is called
 end
 
 -- handle websocket message
