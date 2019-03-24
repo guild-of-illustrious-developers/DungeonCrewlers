@@ -19,6 +19,8 @@
 ** lua-messagepack
 ** https://github.com/kawanet/msgpack-lite
 * libev (lua-ev)
+* https://github.com/ImagicTheCat/Luaseq
+* https://github.com/ImagicTheCat/Luaoop
 
 == Objectifs
 
